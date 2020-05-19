@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(../images/bg.jpeg) no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+}
+img{
+    border-radius: 10cm;
+}
+
+h1{
+    font-size: larger;
+    font-family: 'Helvetica Neue';
+}
+.profile{
+    color: rgba(43, 49, 48, 0.712);
+    font-weight: bolder;
+    position: absolute;
+    top: 43%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+}
+.button{
+    position: absolute;
+    top: 61%;
+    left: 41%;
+}
+a span {
+    max-width: 0;
+    -webkit-transition: max-width 1s;
+    transition: max-width 1s;
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  a:hover span {
+    max-width: 7rem;
+  }
+
+
+
