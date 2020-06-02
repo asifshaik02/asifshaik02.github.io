@@ -9,6 +9,18 @@
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
+        <header>
+            <nav >
+                <ul>
+                    <li><a  href="https://github.com/asifshaik02" class="w3-hover-grey" target="_blank"><i class="fa fa-github"></i><span>Github</span></a></li>
+                    <li><a  href="https://www.linkedin.com/in/asif-shaik-157b921a6/" class="w3-hover-blue" target="_blank"><i class="fa fa-linkedin"></i><span>Linkedin</span></a></li>
+                    <li><a  href="https://www.instagram.com/asifshaik._/" class="w3-hover-pink" target="_blank"><i class="fa fa-instagram"></i><span>Instagram</span></a></li>
+                    <li><a  href="https://twitter.com/asifmohammed290" class="w3-hover-blue" target="_blank"><i class="fa fa-twitter"></i><span>Twitter</span></a></li>
+                    <li><a  href="mailto:asifmohammed290602@gmail.com?" class="w3-hover-khaki" target="_blank"><i class="fa fa-envelope"></i><span>Contact</span></a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="false"></i></div>
+        </header>
         <div class="profile">
                 <a href="https://github.com/asifshaik02" title="link to github" target="_blank"> <img src="./images/profile.jpg" alt="profile" width="120" height="120"></a>
                 <h1>Asif Shaik</h1>
@@ -21,5 +33,12 @@
             <a  href="https://twitter.com/asifmohammed290" class="w3-button  w3-blue w3-hover-white w3-ripple" role="button" target="_blank"><i class="fa fa-twitter"></i><span>Twitter</span></a>&nbsp;
             <a  href="mailto:asifmohammed290602@gmail.com?" class="w3-button  w3-khaki w3-hover-green w3-ripple" role="button" target="_blank"><i class="fa fa-envelope"></i><span>Contact</span></a>&nbsp;
         </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('.menu-toggle').click(function(){
+                $('nav').toggleClass('active')
+            })
+        })</script>
     </body>
 </html>

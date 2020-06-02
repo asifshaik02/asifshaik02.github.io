@@ -3,7 +3,9 @@ body{
     padding: 0;
     background: url(../images/bg.jpeg) no-repeat;
     background-size: cover;
-    opacity: 0.8;
+}
+header nav ul li {
+    display: none;
 }
 img{
     border-radius: 10cm;
@@ -39,5 +41,92 @@ a span {
     max-width: 7rem;
   }
 
+.menu-toggle{
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+/*medium screens*/
+@media(max-width:970px) and (min-width:721px){
+    .button{
+        position: absolute;
+        top: 61%;
+        left: 38%;
+    }
+}
+/*for mobile view*/
+@media(max-width:780px){
+    body{
+        margin: 0;
+        padding: 0;
+        background:url(../images/bg1.jpg);
+        background-size: cover;
+    }
+    .menu-toggle{
+        display: block;
+    }
+    .button{
+        display: none;
+    }
+    header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0 100px;
+        color: #fff;
+        background: #0f0e0e;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    header nav ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    header nav ul li{
+        list-style: none;
+        background-color: #0f0e0e;
+        display: block;
+    }
+    header nav ul li a{
+        height: 50px;
+        line-height: 50px;
+        padding: 0 20px;
+        text-decoration: none;
+        display: block;
+    }
+    header nav{
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        top: 50px;
+        left: -100%;
+        transition: 0.5s;
+    }
+    header nav.active{
+        left: 0;
+    }
+    header nav ul{
+        display: block;
+        text-align: center;
+    }
+    header nav ul li a{
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+    .profile{
+        color: rgba(9, 10, 10, 0.712);
+        font-weight: bolder;
+        position: absolute;
+        top: 70%;
+        left: 51%;
+        transform: translate(-50%, -50%);
+    }
+    .profile hr{
+        display: none;
+    }
+}
 
 
