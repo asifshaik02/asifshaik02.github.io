@@ -120,8 +120,13 @@ a span {
         color: rgba(9, 10, 10, 0.712);
         font-weight: bolder;
         position: absolute;
+<<<<<<< HEAD
         top: 65%;
         left: 52%;
+=======
+        top: 67%;
+        left: 51%;
+>>>>>>> 4b8879bc3295766baae5f004a4c34aef636d7acf
         transform: translate(-50%, -50%);
     }
     .profile hr{
